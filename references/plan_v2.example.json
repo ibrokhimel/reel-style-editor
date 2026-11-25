@@ -1,0 +1,27 @@
+{
+  "_comment": "The DEFAULT ('v2') plan: talking head (+ optional screen recording) -> dark iPhone app inserts, plain white captions, glide zooms, real music + real SFX. Replace every 'w:N' with the index of the first word of the clause in transcript_cut.txt, and the texts with your own. Delete the sections you don't need. Keys starting with _ are ignored.",
+  "style": "ios",
+  "caption_style": "clean",
+  "aroll": "aroll.mp4",
+  "music": "audio/music_33.mp3",
+  "music_start": 9.39,
+  "bed_db": -9,
+  "tail": 0.3,
+  "corrections": {},
+  "sections": [
+    {"at": 0, "kind": "face", "_note": "hook: caption is on screen at frame 0", "props": {"zoom": 1.05, "push": 0.03}},
+    {"at": "w:6", "kind": "face", "_note": "punch-in on the claim; glide is the default between face shots", "props": {"zoom": 1.22, "push": 0.02, "y": 0.3}},
+    {"at": "w:8", "kind": "timer", "_note": "time / urgency / pain point; enter defaults to 'app'", "captionY": 0.705, "props": {"seconds": 59, "endTime": "16:05", "drain": 0.9}},
+    {"at": "w:16", "kind": "messages", "_note": "an offer / a conversation", "props": {"name": "Contact name", "avatar": "🎓", "time": "Today 16:04", "fontPt": 22, "bubbles": [{"me": false, "text": "First message 👋", "at": 0.1}, {"me": false, "text": "Second message 🎁", "at": 2.0}]}},
+    {"at": "w:23", "kind": "face", "enter": "app", "props": {"zoom": 1.3, "push": 0.02, "y": 0.18}},
+    {"at": "w:26", "kind": "face", "_note": "back to a wide shot (glides)", "props": {"zoom": 1.0, "push": 0.03}},
+    {"at": "w:35", "kind": "face", "_note": "screen-recording segment: zoom onto the UI being discussed (y = where it is on screen)", "props": {"zoom": 1.3, "push": 0.02, "y": 0.42}},
+    {"at": "w:41", "kind": "reminders", "_note": "a list / checklist; checkAt ticks an item when it is spoken", "props": {"title": "Section", "color": "#0A84FF", "items": [{"text": "First item", "note": "detail", "at": 0.05, "checkAt": 2.0}, {"text": "Second item", "note": "detail", "at": 2.4, "checkAt": 3.6}]}},
+    {"at": "w:46", "kind": "face", "enter": "app", "props": {"zoom": 1.3, "push": 0.02, "y": 0.45}},
+    {"at": "w:51", "kind": "calendar", "_note": "schedule / format / exam; tapAt presses the tapIndex event", "props": {"month": "June", "day": "Weekday, 1 June", "startHour": 9, "nowLine": 10.4, "events": [{"title": "Event one", "sub": "09:00 - 10:30", "hour": 9, "dur": 1.5, "color": "orange", "at": 0.3}, {"title": "Event two", "sub": "details", "hour": 11, "dur": 1.5, "color": "blue", "at": 2.0}], "tapAt": 3.5, "tapIndex": 1}},
+    {"at": "w:58", "kind": "face", "enter": "app", "props": {"zoom": 1.3, "push": 0.02, "y": 0.5}},
+    {"at": "w:81", "kind": "photos", "_note": "a document / screenshot / photo shown full-screen", "props": {"img": "photo.jpg", "date": "Title", "time": "subtitle"}},
+    {"at": "w:88", "kind": "face", "enter": "defocus", "props": {"zoom": 1.1, "push": 0.02}},
+    {"at": "w:92", "kind": "face", "_note": "closing line, tight", "props": {"zoom": 1.25, "push": 0.02, "y": 0.3}}
+  ]
+}
